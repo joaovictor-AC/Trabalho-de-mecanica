@@ -28,7 +28,7 @@ def X_c(dados):
 
     print(f"A força resultante é: {R} N")
     print(f"x_c = {xc} m")
-    print(f"x_c ~= {round(xc,3)} m")
+    print(f"x_c ~= {round(xc,3)} m") # xc aproximado com 3 casas decimais
 
     dados.clear()
     print()
@@ -78,7 +78,13 @@ dados.append(list(F4.values())) # Adiciona o objeto com os parãmetros força e 
 
 X_c(dados) # Chama a função que calcula a distãncia xc passando como parâmetro o array de dados.
 
-# PROBLEMA 3.106 a)
+"""
+PROBLEMA 3.106 a)
+Três refletores de palco são montados em um tubo, como mostra a figura. As luzes em A e B pesam 18 N cada uma,
+enquanto a outra em C pesa 15 N. a) Se d = 0,60 m, determine a distância do ponto D até a linha de ação da resultante
+dos pesos dos três refletores. b) Determine o valor de d de modo que a resultante dos pesos passe pelo ponto médio do tubo.
+"""
+
 print("PROBLEMA 3.106 a)")
 
 # Força 1
@@ -105,6 +111,7 @@ dados.append(list(F3.values())) # Adiciona o objeto com os parãmetros força e 
 X_c(dados) # Executa a função que calcula a distãncia xc passando como parâmetro o array de dados.
 
 # PROBLEMA GENÉRICO
+print("Problema genérico")
 dnv = 0
 while (not dnv):
     n = int(input("Há quantas forças no sistema: ")) # Número de forças
